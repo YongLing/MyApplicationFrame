@@ -44,4 +44,6 @@ dependencies {
     compile 'com.github.rahatarmanahmed:circularprogressview:2.5.0'  //转动进度条
     //UI 库  吊到爆
     //https://github.com/wasabeef/awesome-android-ui
+    //各种库的集合   https://github.com/Trinea/android-common
+    compile 'cn.trinea.android.common:trinea-android-common:4.2.15'
 }
