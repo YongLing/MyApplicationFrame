@@ -25,25 +25,34 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
+    compile fileTree(include: ['*.jar'], dir: 'libs')
     androidTestCompile('com.android.support.test.espresso:espresso-core:2.2.2', {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.0.1'
     testCompile 'junit:junit:4.12'
-    compile 'de.greenrobot:greendao:1.3.7'  //数据库访问
-    compile 'com.loopj.android:android-async-http:1.4.9'  //http请求框架
-    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5' //image loader
-    compile 'net.simonvt.menudrawer:menudrawer:3.0.6'  //抽屉 菜单
+    compile 'de.greenrobot:greendao:1.3.7'
+    //数据库访问
+    compile 'com.loopj.android:android-async-http:1.4.9'
+    //http请求框架
+    compile 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    //image loader
+    compile 'net.simonvt.menudrawer:menudrawer:3.0.6'
+    //抽屉 菜单
     // https://mvnrepository.com/artifact/com.github.chrisbanes.pulltorefresh/library
-    //compile 'com.github.chrisbanes.pulltorefresh:2.1.1' //pull to re
-//    compile 'com.android.support:recyclerview-v7:21.0.0'
-//    compile 'com.android.support:support-v4:20.+'
+    // compile 'com.github.chrisbanes.pulltorefresh:2.0.1' //pull to re
+    //    compile 'com.android.support:recyclerview-v7:21.0.0'
+    //    compile 'com.android.support:support-v4:20.+'
     //https://github.com/daimajia/AndroidSwipeLayout
-    compile "com.daimajia.swipelayout:library:1.2.0@aar"    //滑动删除
-    compile 'com.github.rahatarmanahmed:circularprogressview:2.5.0'  //转动进度条
+    compile 'com.daimajia.swipelayout:library:1.2.0@aar'
+    //滑动删除
+    compile 'com.github.rahatarmanahmed:circularprogressview:2.5.0'
+    //转动进度条
     //UI 库  吊到爆
     //https://github.com/wasabeef/awesome-android-ui
     //各种库的集合   https://github.com/Trinea/android-common
     compile 'cn.trinea.android.common:trinea-android-common:4.2.15'
+    //gson :simple toJson() and fromJson() methods to convert Java objects to JSON and vice-versa
+    compile 'com.google.code.gson:gson:2.8.0'
+    compile 'com.github.chrisbanes.actionbarpulltorefresh:library:0.9.9'  //以前一直用的pulltorefresh
 }
